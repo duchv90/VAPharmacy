@@ -21,7 +21,8 @@
             <td
               v-if="key !== 'minPrice' && key.toString().includes('vendor_')"
               :class="{
-                'bg-purple-100': value === record.minPrice,
+                'bg-purple-100':
+                  value === record.minPrice && record.minPrice !== 0,
               }"
               class="border border-slate-200 px-2"
             >

@@ -32,7 +32,10 @@ const onClick = async () => {
     const response: null | { success: boolean } = await $fetch(
       '/api/data/fetch',
       {
-        method: 'GET',
+        method: 'POST',
+        body: JSON.stringify({
+          token: 'test_token',
+        }),
       },
     );
     if (response && response.success) {
