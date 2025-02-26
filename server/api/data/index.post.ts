@@ -28,6 +28,7 @@ export default defineEventHandler(async () => {
           if (Array.isArray(row.values)) {
             const rowData: IData = {
               id: 0,
+              index: 0,
               category: '',
               name: '',
               unit: 'Hộp',
